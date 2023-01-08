@@ -4,16 +4,17 @@ const { ccclass, property } = _decorator;
 @ccclass('LevelController')
 export class LevelController extends Component {
     @property({ type: Number })
-    protected whichLevel: number;
-    protected showWinUI: CallableFunction;
+    public whichLevel: number;
+    public showWinUI: CallableFunction;
 
-    protected setUp(showWinUI: CallableFunction) {
+    public setUp(showWinUI: CallableFunction) {
         this.showWinUI = showWinUI;
     }
 
-    protected onNextLevel() {
+    public onShowWinUI() {
         this.showWinUI();
     }
+
     update(deltaTime: number) {
 
     }

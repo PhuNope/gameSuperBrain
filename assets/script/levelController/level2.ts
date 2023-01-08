@@ -3,7 +3,7 @@ import { LevelController } from './LevelController';
 const { ccclass, property } = _decorator;
 
 @ccclass('level2')
-export class level2 extends LevelController {
+export class level2 extends Component {
     start() {
 
     }
